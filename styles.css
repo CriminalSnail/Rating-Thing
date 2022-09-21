@@ -1,16 +1,18 @@
 body {margin:0px;
 padding:0px;
+width:100%;
 font-family: "Overpass";
 background-color:hsl(216, 12%, 8%) ;
-color: aliceblue;
+color:white;
 }
 #container {height:350px;
-width:350px;
+width:420px;
 background:linear-gradient( hsl(213, 19%, 18%), hsl(221, 33%, 11%));
 display: flex;
 flex-direction: column;
 margin:280px auto;
-border-radius: 20px;}
+border-radius: 20px;
+}
 #content-part {height: 85% ;
 margin:auto auto;
 width: 87%;}
@@ -32,7 +34,8 @@ margin-top:25px;
 }
 #title>h1 {margin:0px;
 font-family: "Overpass";
-font-size: 28px;}
+font-size: 28px;
+color: white;}
 #text {margin:0px auto;
     text-align: left;
     width:100%;
@@ -46,15 +49,16 @@ color:hsl(216, 12%, 54%)}
     flex-direction: row;
 gap:20px;
 text-align: center;
-justify-content: center;
+justify-content: space-between;
 margin-top:20px;
 }
-#num {width: 45px;
-height:45px;
+#num {width: 50px;
+height:50px;
 background-color:hsl(211, 23%, 22%);
 vertical-align: middle;
 color:hsl(216, 12%, 54%);
 border-radius: 50%;
+border:none;
 display: flex;
 align-items: center;
 justify-content: center;}
@@ -65,6 +69,7 @@ height: 38px;
 margin-top:28px
 }
 #submit {width:100%;
+    min-width: 50%;
 height: 100%;
 border-radius: 20px;
 background-color: hsl(25, 97%, 53%);
@@ -87,3 +92,70 @@ color:white}
 color: hsl(25, 97%, 53%)}
 
 
+
+
+/* Second Page */
+#container2 {height:400px;
+    width:420px;
+    background:linear-gradient( hsl(213, 19%, 18%), hsl(221, 33%, 11%));
+    display: flex;
+    flex-direction: column;
+    margin:280px auto;
+    border-radius: 20px;
+display: none;}
+#content-part2 {height: 85% ;
+        margin:auto auto;
+        width: 87%;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+#head1 {
+            text-align: center;
+            width:100%;
+            margin-top:25px;
+            }
+#head1>h1 {margin:0px;
+            font-family: "Overpass";
+            font-size: 28px;
+            color: white;}
+#thank-you-icon {margin-inline:  auto;
+    margin-top: 25px;
+display: flex;
+align-items: center;
+justify-content:center;}
+#selected {background-color:hsl(211, 23%, 22%);
+color:hsl(25, 97%, 53%);
+width:60%;
+height: 30px;
+margin-top: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+border-radius: 25px;}
+#selected>p {height:100%;
+width:100%;
+font-size: 15px;
+font-family: "Overpass";
+font-weight: 700;
+text-align: center;
+vertical-align: middle;
+margin:0px;
+}
+
+
+@media (max-width:330px) 
+{#selected {width:80%;
+height: 50px;}
+#head1 {margin-top:10px;}}
+
+@media (max-width:590px) {
+    #container {width:90%;}
+    #container2 {width: 90%;}
+}
+
+
+@media (max-width:375px)
+{#container {width:95%;}
+#container2 {width: 95%;}}
